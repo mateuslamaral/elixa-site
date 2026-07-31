@@ -117,6 +117,12 @@ h3 { font-family: Cinzel, serif; font-weight: 600; color: var(--pale);
 .store-btn .ico { font-size:26px; line-height:1; }
 .store-btn .l1 { font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--mut); }
 .store-btn .l2 { font-family:Cinzel,serif; font-weight:600; font-size:17px; color:var(--pale); }
+/* inert "coming soon" pills — honest: not tappable, not a live badge */
+.store-btn.soon { opacity:.62; cursor:default; }
+.store-btn.soon:hover { transform:none; border-color:var(--line); box-shadow:none; }
+.store-btn.soon .ico { filter:grayscale(1); opacity:.7; }
+.store-btn.soon .l1 { color:var(--gold); font-weight:600; }
+.store-btn.soon .l2 { font-size:14px; color:var(--mut); font-family:Inter,sans-serif; font-weight:500; }
 
 /* ---- feature grid ---- */
 .grid { display:grid; gap:var(--s5); }
