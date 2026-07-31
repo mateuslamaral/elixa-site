@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://elixagame.com/sitemap.xml
