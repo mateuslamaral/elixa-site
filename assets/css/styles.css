@@ -216,3 +216,10 @@ h3 { font-family: Cinzel, serif; font-weight: 600; color: var(--pale);
   * { scroll-behavior:auto !important; transition:none !important; }
   .card:hover, .el:hover, .store-btn:hover, .btn-gold:hover { transform:none; }
 }
+
+/* language switcher */
+.lang-switch { display:flex; gap:2px; align-items:center; font-size:13px; letter-spacing:.06em;
+  border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+.lang-switch a { padding:6px 10px; color:var(--mut); min-height:auto !important; }
+.lang-switch a[aria-current="page"] { background:rgba(242,208,107,.14); color:var(--gold); }
+.lang-switch a:hover { color:var(--gold); }
