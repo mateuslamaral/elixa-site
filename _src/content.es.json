@@ -1,85 +1,137 @@
 {
   "_lang": "es",
   "_htmllang": "es",
-  "nav": { "features":"Características","elements":"Elementos","craft":"El oficio","coming":"Muy pronto",
-    "home":"Inicio","privacy":"Privacidad","support":"Soporte","terms":"Términos","contact":"Contacto","legal":"Legal y soporte" },
-  "common": {
-    "skip":"Saltar al contenido",
-    "coming_soon":"Muy pronto",
-    "back_home":"Inicio",
-    "back_legal":"Legal",
-    "copy":"&copy; 2026 Mateus Amaral · Elixa",
-    "elemental_sort":"Ordena Elementos"
+  "nav": {
+    "features": "Características",
+    "elements": "Elementos",
+    "craft": "El oficio",
+    "coming": "Muy pronto",
+    "home": "Inicio",
+    "privacy": "Privacidad",
+    "support": "Soporte",
+    "terms": "Términos",
+    "contact": "Contacto",
+    "legal": "Legal y soporte"
   },
-  "elements": { "fire":"Fuego","water":"Agua","earth":"Tierra","light":"Luz","darkness":"Oscuridad","air":"Aire","spirit":"Espíritu" },
+  "common": {
+    "skip": "Saltar al contenido",
+    "coming_soon": "Muy pronto",
+    "back_home": "Inicio",
+    "back_legal": "Legal",
+    "copy": "&copy; 2026 Mateus Amaral · Elixa",
+    "elemental_sort": "Ordena Elementos"
+  },
+  "elements": {
+    "fire": "Fuego",
+    "water": "Agua",
+    "earth": "Tierra",
+    "light": "Luz",
+    "darkness": "Oscuridad",
+    "air": "Aire",
+    "spirit": "Espíritu"
+  },
   "home": {
-    "meta_title":"Elixa — un puzle relajante de ordenar alquimia",
-    "meta_desc":"Elixa es un puzle relajante de ordenar alquimia. Vierte minerales elementales resplandecientes entre tubos de cristal hasta que cada uno contenga un solo elemento. Sin cronómetros, sin vidas, sin anuncios a mitad del puzle. Muy pronto.",
-    "og_title":"Elixa — un puzle relajante de ordenar alquimia",
-    "og_desc":"Vierte, ordena y transmuta los siete elementos. Sin cronómetros, sin vidas, sin anuncios a mitad del puzle. Paga una vez, juega cuanto quieras. Muy pronto.",
-    "hero_tagline":"Un puzle relajante de ordenar alquimia. Vierte minerales elementales resplandecientes entre tubos de cristal hasta que cada uno contenga un solo elemento puro.",
-    "about_eyebrow":"Qué es Elixa",
-    "about_h2":"Ordena los elementos. Encuentra algo de calma.",
-    "about_lead":"Toca un tubo, toca otro y los minerales de arriba se vierten — apilando color sobre color hasta que cada tubo contenga un elemento limpio. Sin cronómetros. Sin vidas. Sin energía que se agote. Solo tú, los minerales y todos los minutos tranquilos que quieras.",
-    "feat_eyebrow":"Qué lo hace diferente",
-    "feat_h2":"Hecho para la calma, no para el clic",
-    "feat":[
-      {"t":"Juega a tu ritmo","b":"Sin cronómetros, sin vidas, sin medidor de energía. Retómalo para un puzle o para cien — el laboratorio siempre está abierto."},
-      {"t":"Satisfactorio al tacto","b":"Cada vertido encaja en su lugar con un clic suave y preciso. Todo el sentido está en que <em>se siente</em> bien."},
-      {"t":"Nunca un tablero imposible","b":"Cada nivel se verifica con un solucionador antes de publicarse. Si un puzle está en el juego, tiene solución — sin callejones sin salida, sin muros baratos."},
-      {"t":"Cientos de niveles","b":"Cientos de niveles repartidos en cuatro capítulos de temática alquímica, ajustados para que la dificultad suba con amabilidad — desde tu primer vertido hasta La Gran Obra."},
-      {"t":"Legible para todos","b":"Cada elemento tiene su propia forma y símbolo, no solo un color — así el tablero se mantiene claro aunque percibas el color de forma diferente."},
-      {"t":"Tuyo, sin conexión","b":"Juega donde sea sin conexión. Tu progreso vive en tu dispositivo — nada que iniciar sesión, sin cuenta necesaria."}
+    "meta_title": "Elixa — un puzle relajante de ordenar alquimia",
+    "meta_desc": "Elixa es un puzle relajante de ordenar alquimia. Vierte minerales elementales resplandecientes entre tubos de cristal hasta que cada uno contenga un solo elemento. Sin cronómetros, sin vidas, sin anuncios a mitad del puzle. Muy pronto.",
+    "og_title": "Elixa — un puzle relajante de ordenar alquimia",
+    "og_desc": "Vierte, ordena y transmuta los siete elementos. Sin cronómetros, sin vidas, sin anuncios a mitad del puzle. Paga una vez, juega cuanto quieras. Muy pronto.",
+    "hero_tagline": "Un puzle relajante de ordenar alquimia. Vierte minerales elementales resplandecientes entre tubos de cristal hasta que cada uno contenga un solo elemento puro.",
+    "about_eyebrow": "Qué es Elixa",
+    "about_h2": "Ordena los elementos. Encuentra algo de calma.",
+    "about_lead": "Toca un tubo, toca otro y los minerales de arriba se vierten — apilando color sobre color hasta que cada tubo contenga un elemento limpio. Sin cronómetros. Sin vidas. Sin energía que se agote. Solo tú, los minerales y todos los minutos tranquilos que quieras.",
+    "feat_eyebrow": "Qué lo hace diferente",
+    "feat_h2": "Hecho para la calma, no para el clic",
+    "feat": [
+      {
+        "t": "El tema es la lógica",
+        "b": "La alquimia no es una capa de pintura. Los siete elementos son los colores que ordenas, la transmutación es un movimiento real, y los cuatro capítulos son tu recorrido: la historia y las reglas son lo mismo."
+      },
+      {
+        "t": "Transmuta, no solo ordenes",
+        "b": "Un mineral comodín de prima materia se vierte en cualquier tubo y luego <strong>se transmuta</strong> de forma permanente en un elemento verdadero al encajar. Un movimiento que el género de ordenar simplemente no tiene."
+      },
+      {
+        "t": "Hecho para sentirse",
+        "b": "Cada elemento estalla con su propio efecto, la vibración se afina al momento, y la música responde a la dificultad. Satisfactorio por diseño, no por casualidad."
+      },
+      {
+        "t": "Legible por diseño",
+        "b": "Cada mineral tiene su propia forma esculpida, no solo un color — con símbolos opcionales y paletas aptas para daltónicos, para señales en las que siempre puedes confiar."
+      },
+      {
+        "t": "Nada te estorba",
+        "b": "Sin energía, sin vidas, sin cronómetros. Deshacer y reiniciar son gratis e ilimitados: el juego nunca te cobra por un error ni te hace esperar para jugar."
+      },
+      {
+        "t": "Maestría, no solo terminar",
+        "b": "Las estrellas se miden contra la solución óptima del propio solucionador — y resolver un tablero sin pistas ni deshacer consigue un <strong>Flawless</strong>. Cada nivel está verificado con solucionador, así que el reto es real, nunca al azar."
+      }
     ],
-    "el_eyebrow":"Los siete elementos",
-    "el_h2":"Siete minerales, cada uno con su propio brillo",
-    "craft_eyebrow":"El oficio",
-    "craft_h2":"Un poco de alquimia en cada tablero",
-    "craft":[
-      {"t":"Prima materia","b":"Un mineral incoloro especial se vierte libremente en cualquier tubo — y luego <strong>se transmuta</strong>, cristalizando en un elemento verdadero al encajar en su lugar. Un pequeño momento de alquimia cuando lo necesitas."},
-      {"t":"Partidas impecables","b":"Completa un nivel solo con los movimientos esenciales —sin pistas, sin deshacer— y consigue un <strong>Flawless</strong>: una transmutación perfecta, marcada con sus propias estrellas carmesí."},
-      {"t":"Cuatro capítulos","b":"Avanza desde <strong>Fundamentos</strong> pasando por <strong>El Crisol</strong> y <strong>Confluencia</strong> hasta <strong>La Gran Obra</strong> — el laboratorio se profundiza a medida que tus manos lo aprenden."}
+    "el_eyebrow": "Los siete elementos",
+    "el_h2": "Siete minerales, cada uno con su propio brillo",
+    "craft_eyebrow": "El oficio",
+    "craft_h2": "Un poco de alquimia en cada tablero",
+    "craft": [
+      {
+        "t": "Prima materia",
+        "b": "Un mineral incoloro especial se vierte libremente en cualquier tubo — y luego <strong>se transmuta</strong>, cristalizando en un elemento verdadero al encajar en su lugar. Un pequeño momento de alquimia cuando lo necesitas."
+      },
+      {
+        "t": "Partidas impecables",
+        "b": "Completa un nivel solo con los movimientos esenciales —sin pistas, sin deshacer— y consigue un <strong>Flawless</strong>: una transmutación perfecta, marcada con sus propias estrellas carmesí."
+      },
+      {
+        "t": "Cuatro capítulos",
+        "b": "Avanza desde <strong>Fundamentos</strong> pasando por <strong>El Crisol</strong> y <strong>Confluencia</strong> hasta <strong>La Gran Obra</strong> — el laboratorio se profundiza a medida que tus manos lo aprenden."
+      }
     ],
-    "gal_eyebrow":"Un vistazo al laboratorio",
-    "gal_h2":"Míralo en acción",
-    "gal_cap1":"Vierte para ordenar — un elemento por tubo",
-    "gal_cap2":"Sereno, sin prisa, sin cronómetros",
-    "promise_eyebrow":"Nuestra promesa",
-    "promise_h2":"Paga una vez. Juega cuanto quieras.",
-    "promise_lead":"Un único desbloqueo justo abre toda la colección y elimina los anuncios — cómpralo una vez y es tuyo. Sin interrupciones, sin esperas, sin trampas.",
-    "promise_items":["Sin anuncios a mitad de un puzle","Sin suscripción","Sin cronómetros de energía ni vidas","Sin patrones oscuros"],
-    "coming_eyebrow":"Próximamente",
-    "coming_h2":"En el laboratorio ahora — muy pronto",
-    "coming_lead_pre":"Elixa está en pruebas cerradas, ajustándose hacia un lanzamiento en la App Store y Google Play. ¿Quieres una vista previa o ayudar a probarlo? ",
-    "coming_lead_link":"Ponte en contacto",
-    "coming_lead_post":"."
+    "gal_eyebrow": "Un vistazo al laboratorio",
+    "gal_h2": "Míralo en acción",
+    "gal_cap1": "Vierte para ordenar — un elemento por tubo",
+    "gal_cap2": "Sereno, sin prisa, sin cronómetros",
+    "promise_eyebrow": "Nuestra promesa",
+    "promise_h2": "Paga una vez. Juega cuanto quieras.",
+    "promise_lead": "Un único desbloqueo justo abre toda la colección y elimina los anuncios — cómpralo una vez y es tuyo. Sin interrupciones, sin esperas, sin trampas.",
+    "promise_items": [
+      "Sin anuncios a mitad de un puzle",
+      "Sin suscripción",
+      "Sin cronómetros de energía ni vidas",
+      "Sin patrones oscuros"
+    ],
+    "coming_eyebrow": "Próximamente",
+    "coming_h2": "En el laboratorio ahora — muy pronto",
+    "coming_lead_pre": "Elixa está en pruebas cerradas, ajustándose hacia un lanzamiento en la App Store y Google Play. ¿Quieres una vista previa o ayudar a probarlo? ",
+    "coming_lead_link": "Ponte en contacto",
+    "coming_lead_post": "."
   },
   "legal": {
-    "meta_title":"Legal — Elixa",
-    "meta_desc":"Documentos legales y soporte de Elixa.",
-    "h1":"Legal y soporte",
-    "lead":"Elixa es un juego de puzles de temática alquímica creado por Mateus Amaral. Esta página aloja los documentos exigidos por las tiendas de aplicaciones y enlaza a la ayuda.",
-    "card_privacy":"Política de privacidad","card_support":"Soporte y contacto","card_terms":"Términos de uso",
-    "note":"Elixa no recopila <strong>ninguna información personal</strong>, no muestra <strong>anuncios</strong> y no requiere <strong>cuenta</strong>. Solo se usan analíticas de juego anónimas y agregadas para mejorar el juego."
+    "meta_title": "Legal — Elixa",
+    "meta_desc": "Documentos legales y soporte de Elixa.",
+    "h1": "Legal y soporte",
+    "lead": "Elixa es un juego de puzles de temática alquímica creado por Mateus Amaral. Esta página aloja los documentos exigidos por las tiendas de aplicaciones y enlaza a la ayuda.",
+    "card_privacy": "Política de privacidad",
+    "card_support": "Soporte y contacto",
+    "card_terms": "Términos de uso",
+    "note": "Elixa no recopila <strong>ninguna información personal</strong>, no muestra <strong>anuncios</strong> y no requiere <strong>cuenta</strong>. Solo se usan analíticas de juego anónimas y agregadas para mejorar el juego."
   },
   "privacy": {
-    "meta_title":"Política de privacidad — Elixa",
-    "meta_desc":"Política de privacidad de Elixa: sin cuentas, sin anuncios, sin datos personales — solo analíticas anónimas.",
-    "h1":"Política de privacidad",
-    "updated":"Última actualización: 27 de julio de 2026",
-    "body":"<p class=\"lead\">Elixa (&ldquo;el juego&rdquo;, &ldquo;nosotros&rdquo;) es un juego de puzles publicado por Mateus Amaral. Esta política explica qué datos maneja el juego y por qué. <strong>No vendemos tus datos, no te mostramos anuncios, no exigimos una cuenta ni rastreamos tu identidad.</strong></p><h2>Resumen</h2><ul class=\"check\"><li><strong>Sin cuentas, sin inicio de sesión, sin recopilación de información personal.</strong></li><li><strong>Sin publicidad ni redes de anuncios.</strong></li><li><strong>Sin rastreo de terceros ni intermediarios de datos.</strong></li><li>El progreso de tu juego se almacena <strong>solo en tu dispositivo</strong>.</li><li>Recopilamos <strong>analíticas de juego anónimas y agregadas</strong> para mejorar el juego. Estas analíticas <strong>no pueden identificarte</strong>.</li></ul><h2>Qué recopilamos</h2><h3>1. Datos de juego en el dispositivo (nunca salen de tu dispositivo)</h3><p>Tu progreso de niveles, estrellas y ajustes de la aplicación se guardan localmente en tu dispositivo mediante el almacenamiento estándar de aplicaciones. Estos datos no se nos transmiten y se eliminan si desinstalas el juego o usas la opción &ldquo;Restablecer progreso&rdquo; dentro del juego.</p><h3>2. Analíticas de juego anónimas</h3><p>Para entender cómo se juega y mejorar la dificultad y el rendimiento, el juego envía eventos de juego <strong>anónimos</strong> a nuestro proveedor de analíticas, <strong>PostHog</strong>. Los eventos se procesan a través del punto de acceso de PostHog en Estados Unidos, y la dirección IP del cliente se <strong>elimina y nunca se almacena</strong>. Estos eventos describen el <em>juego</em>, no a las <em>personas</em>. Ejemplos de lo que se envía:</p><ul><li>Qué nivel se inició, se resolvió o se abandonó, y cuánto tardó.</li><li>Número de movimientos, deshacer y movimientos inválidos (para calibrar la dificultad).</li><li>Muestras anónimas de rendimiento de renderizado (tiempos de fotograma) para detectar tirones en distintos dispositivos.</li><li>Contexto técnico general: modelo del dispositivo, versión del sistema operativo, tipo de compilación de la aplicación y un <strong>identificador anónimo generado aleatoriamente y creado por nosotros mismos</strong> que <strong>no</strong> está vinculado a ti, al identificador publicitario de tu dispositivo, a tu nombre, correo electrónico ni a ninguna cuenta.</li></ul><p><strong>No</strong> recopilamos tu nombre, dirección de correo electrónico, número de teléfono, ubicación precisa, contactos, fotos, identificadores publicitarios ni ninguna otra información personal o sensible. Nunca te pedimos que inicies sesión.</p><p>El identificador anónimo es un valor aleatorio creado solo para agrupar analíticas; no está ligado a tu identidad y no puede usarse para contactarte ni volver a identificarte.</p><h2>Por qué lo recopilamos</h2><p>Únicamente para operar y mejorar el juego — equilibrar la dificultad de los puzles, encontrar y corregir problemas de rendimiento y entender qué funciones se utilizan. Tenemos un interés legítimo en mejorar el producto; los datos son anónimos y mínimos.</p><h2>Quién procesa los datos</h2><ul><li><strong>PostHog</strong> — analíticas de producto, usadas para almacenar y agregar los eventos anónimos descritos arriba. Consulta la información de privacidad de PostHog en <a href=\"https://posthog.com/privacy\" rel=\"noopener\">https://posthog.com/privacy</a>.</li></ul><p>No compartimos datos con anunciantes ni intermediarios de datos, y no vendemos datos.</p><h2>Conservación de datos</h2><p>Los eventos de analíticas anónimas son conservados por nuestro proveedor de analíticas durante un período limitado para el análisis agregado y luego caducan. Los datos en el dispositivo permanecen hasta que los elimines o desinstales el juego.</p><h2>Privacidad de los menores</h2><p>Elixa no recopila conscientemente información personal de nadie, incluidos los menores. Como no recopilamos información personal o identificativa y no mostramos anuncios, el juego no crea perfiles de ningún usuario.</p><h2>Tus opciones</h2><ul><li><strong>Restablecer progreso:</strong> borra todo el progreso del dispositivo desde los Ajustes del juego.</li><li><strong>Desinstalar:</strong> elimina todos los datos del dispositivo.</li><li><strong>Contáctanos</strong> (más abajo) con cualquier pregunta o solicitud de privacidad.</li></ul><h2>Cambios en esta política</h2><p>Si esta política cambia, actualizaremos la fecha de &ldquo;Última actualización&rdquo; de arriba y publicaremos la nueva versión en esta URL.</p><h2>Contacto</h2><p>Preguntas sobre privacidad: <a href=\"mailto:mateusl.amaral@gmail.com\">mateusl.amaral@gmail.com</a></p>"
+    "meta_title": "Política de privacidad — Elixa",
+    "meta_desc": "Política de privacidad de Elixa: sin cuentas, sin anuncios, sin datos personales — solo analíticas anónimas.",
+    "h1": "Política de privacidad",
+    "updated": "Última actualización: 27 de julio de 2026",
+    "body": "<p class=\"lead\">Elixa (&ldquo;el juego&rdquo;, &ldquo;nosotros&rdquo;) es un juego de puzles publicado por Mateus Amaral. Esta política explica qué datos maneja el juego y por qué. <strong>No vendemos tus datos, no te mostramos anuncios, no exigimos una cuenta ni rastreamos tu identidad.</strong></p><h2>Resumen</h2><ul class=\"check\"><li><strong>Sin cuentas, sin inicio de sesión, sin recopilación de información personal.</strong></li><li><strong>Sin publicidad ni redes de anuncios.</strong></li><li><strong>Sin rastreo de terceros ni intermediarios de datos.</strong></li><li>El progreso de tu juego se almacena <strong>solo en tu dispositivo</strong>.</li><li>Recopilamos <strong>analíticas de juego anónimas y agregadas</strong> para mejorar el juego. Estas analíticas <strong>no pueden identificarte</strong>.</li></ul><h2>Qué recopilamos</h2><h3>1. Datos de juego en el dispositivo (nunca salen de tu dispositivo)</h3><p>Tu progreso de niveles, estrellas y ajustes de la aplicación se guardan localmente en tu dispositivo mediante el almacenamiento estándar de aplicaciones. Estos datos no se nos transmiten y se eliminan si desinstalas el juego o usas la opción &ldquo;Restablecer progreso&rdquo; dentro del juego.</p><h3>2. Analíticas de juego anónimas</h3><p>Para entender cómo se juega y mejorar la dificultad y el rendimiento, el juego envía eventos de juego <strong>anónimos</strong> a nuestro proveedor de analíticas, <strong>PostHog</strong>. Los eventos se procesan a través del punto de acceso de PostHog en Estados Unidos, y la dirección IP del cliente se <strong>elimina y nunca se almacena</strong>. Estos eventos describen el <em>juego</em>, no a las <em>personas</em>. Ejemplos de lo que se envía:</p><ul><li>Qué nivel se inició, se resolvió o se abandonó, y cuánto tardó.</li><li>Número de movimientos, deshacer y movimientos inválidos (para calibrar la dificultad).</li><li>Muestras anónimas de rendimiento de renderizado (tiempos de fotograma) para detectar tirones en distintos dispositivos.</li><li>Contexto técnico general: modelo del dispositivo, versión del sistema operativo, tipo de compilación de la aplicación y un <strong>identificador anónimo generado aleatoriamente y creado por nosotros mismos</strong> que <strong>no</strong> está vinculado a ti, al identificador publicitario de tu dispositivo, a tu nombre, correo electrónico ni a ninguna cuenta.</li></ul><p><strong>No</strong> recopilamos tu nombre, dirección de correo electrónico, número de teléfono, ubicación precisa, contactos, fotos, identificadores publicitarios ni ninguna otra información personal o sensible. Nunca te pedimos que inicies sesión.</p><p>El identificador anónimo es un valor aleatorio creado solo para agrupar analíticas; no está ligado a tu identidad y no puede usarse para contactarte ni volver a identificarte.</p><h2>Por qué lo recopilamos</h2><p>Únicamente para operar y mejorar el juego — equilibrar la dificultad de los puzles, encontrar y corregir problemas de rendimiento y entender qué funciones se utilizan. Tenemos un interés legítimo en mejorar el producto; los datos son anónimos y mínimos.</p><h2>Quién procesa los datos</h2><ul><li><strong>PostHog</strong> — analíticas de producto, usadas para almacenar y agregar los eventos anónimos descritos arriba. Consulta la información de privacidad de PostHog en <a href=\"https://posthog.com/privacy\" rel=\"noopener\">https://posthog.com/privacy</a>.</li></ul><p>No compartimos datos con anunciantes ni intermediarios de datos, y no vendemos datos.</p><h2>Conservación de datos</h2><p>Los eventos de analíticas anónimas son conservados por nuestro proveedor de analíticas durante un período limitado para el análisis agregado y luego caducan. Los datos en el dispositivo permanecen hasta que los elimines o desinstales el juego.</p><h2>Privacidad de los menores</h2><p>Elixa no recopila conscientemente información personal de nadie, incluidos los menores. Como no recopilamos información personal o identificativa y no mostramos anuncios, el juego no crea perfiles de ningún usuario.</p><h2>Tus opciones</h2><ul><li><strong>Restablecer progreso:</strong> borra todo el progreso del dispositivo desde los Ajustes del juego.</li><li><strong>Desinstalar:</strong> elimina todos los datos del dispositivo.</li><li><strong>Contáctanos</strong> (más abajo) con cualquier pregunta o solicitud de privacidad.</li></ul><h2>Cambios en esta política</h2><p>Si esta política cambia, actualizaremos la fecha de &ldquo;Última actualización&rdquo; de arriba y publicaremos la nueva versión en esta URL.</p><h2>Contacto</h2><p>Preguntas sobre privacidad: <a href=\"mailto:mateusl.amaral@gmail.com\">mateusl.amaral@gmail.com</a></p>"
   },
   "support": {
-    "meta_title":"Soporte y contacto — Elixa",
-    "meta_desc":"Obtén ayuda con Elixa, informa de un error o haz una pregunta sobre privacidad.",
-    "h1":"Soporte y contacto",
-    "body":"<p class=\"lead\">¿Necesitas ayuda con Elixa, encontraste un error o tienes una pregunta sobre privacidad? Nos encantaría saber de ti.</p><div class=\"card\"><p style=\"margin:0\"><strong>Correo:</strong> <a href=\"mailto:mateusl.amaral@gmail.com\">mateusl.amaral@gmail.com</a></p></div><h2>Antes de escribir</h2><p>Para ayudarnos a reproducir un problema rápidamente, es útil incluir:</p><ul><li>El modelo de tu dispositivo y la versión del sistema operativo.</li><li>La versión de la aplicación (que se muestra en los Ajustes del juego).</li><li>Una breve descripción de lo que ocurrió y lo que esperabas.</li></ul><h2>Preguntas frecuentes</h2><h3>¿Cómo restablezco mi progreso?</h3><p>Abre los <strong>Ajustes</strong> del juego y usa <strong>Restablecer progreso</strong>. Esto borra todos los datos del dispositivo. Desinstalar el juego también elimina todo.</p><h3>¿Recopilan mis datos personales?</h3><p>No. Elixa no tiene cuentas ni anuncios, y no recopila información personal — solo analíticas de juego anónimas y agregadas. Consulta la <a href=\"{PRIVACY}\">Política de privacidad</a>.</p><h3>¿Tiene algún costo o suscripción?</h3><p>Elixa está diseñado como un juego de pago único — un desbloqueo elimina los anuncios y abre la colección completa. Sin suscripciones. (El juego está en pruebas cerradas y aún no está disponible públicamente.)</p>"
+    "meta_title": "Soporte y contacto — Elixa",
+    "meta_desc": "Obtén ayuda con Elixa, informa de un error o haz una pregunta sobre privacidad.",
+    "h1": "Soporte y contacto",
+    "body": "<p class=\"lead\">¿Necesitas ayuda con Elixa, encontraste un error o tienes una pregunta sobre privacidad? Nos encantaría saber de ti.</p><div class=\"card\"><p style=\"margin:0\"><strong>Correo:</strong> <a href=\"mailto:mateusl.amaral@gmail.com\">mateusl.amaral@gmail.com</a></p></div><h2>Antes de escribir</h2><p>Para ayudarnos a reproducir un problema rápidamente, es útil incluir:</p><ul><li>El modelo de tu dispositivo y la versión del sistema operativo.</li><li>La versión de la aplicación (que se muestra en los Ajustes del juego).</li><li>Una breve descripción de lo que ocurrió y lo que esperabas.</li></ul><h2>Preguntas frecuentes</h2><h3>¿Cómo restablezco mi progreso?</h3><p>Abre los <strong>Ajustes</strong> del juego y usa <strong>Restablecer progreso</strong>. Esto borra todos los datos del dispositivo. Desinstalar el juego también elimina todo.</p><h3>¿Recopilan mis datos personales?</h3><p>No. Elixa no tiene cuentas ni anuncios, y no recopila información personal — solo analíticas de juego anónimas y agregadas. Consulta la <a href=\"{PRIVACY}\">Política de privacidad</a>.</p><h3>¿Tiene algún costo o suscripción?</h3><p>Elixa está diseñado como un juego de pago único — un desbloqueo elimina los anuncios y abre la colección completa. Sin suscripciones. (El juego está en pruebas cerradas y aún no está disponible públicamente.)</p>"
   },
   "terms": {
-    "meta_title":"Términos de uso — Elixa",
-    "meta_desc":"Términos de uso del juego Elixa.",
-    "h1":"Términos de uso",
-    "updated":"Última actualización: 31 de julio de 2026",
-    "body":"<p class=\"lead\">Elixa es proporcionado por Mateus Amaral para entretenimiento personal. Al jugar aceptas usarlo de forma lícita y según lo previsto. El juego se ofrece &ldquo;tal cual&rdquo;, sin garantías de ningún tipo, en la medida permitida por la ley.</p><div class=\"card\"><p style=\"margin:0\">Las tiendas de aplicaciones (Apple App Store, Google Play) tienen sus propios términos que también se aplican a tu descarga y uso del juego. Consulta la <a href=\"{PRIVACY}\">Política de privacidad</a> para saber cómo se manejan los datos.</p></div><h2>Contacto</h2><p>Preguntas sobre estos términos: <a href=\"mailto:mateusl.amaral@gmail.com\">mateusl.amaral@gmail.com</a></p>"
+    "meta_title": "Términos de uso — Elixa",
+    "meta_desc": "Términos de uso del juego Elixa.",
+    "h1": "Términos de uso",
+    "updated": "Última actualización: 31 de julio de 2026",
+    "body": "<p class=\"lead\">Elixa es proporcionado por Mateus Amaral para entretenimiento personal. Al jugar aceptas usarlo de forma lícita y según lo previsto. El juego se ofrece &ldquo;tal cual&rdquo;, sin garantías de ningún tipo, en la medida permitida por la ley.</p><div class=\"card\"><p style=\"margin:0\">Las tiendas de aplicaciones (Apple App Store, Google Play) tienen sus propios términos que también se aplican a tu descarga y uso del juego. Consulta la <a href=\"{PRIVACY}\">Política de privacidad</a> para saber cómo se manejan los datos.</p></div><h2>Contacto</h2><p>Preguntas sobre estos términos: <a href=\"mailto:mateusl.amaral@gmail.com\">mateusl.amaral@gmail.com</a></p>"
   }
 }

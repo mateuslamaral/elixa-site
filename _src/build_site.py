@@ -81,8 +81,7 @@ def store_pills(code):
 
 def build_home(code):
     C = CONTENT[code]; H = C["home"]; b = base(code); EL = C["elements"]
-    nav = [(C["nav"]["features"], f"{b}/#features"), (C["nav"]["elements"], f"{b}/#elements"),
-           (C["nav"]["craft"], f"{b}/#craft")]
+    nav = [(C["nav"]["features"], f"{b}/#features"), (C["nav"]["elements"], f"{b}/#elements")]
     feats = "\n".join(
         f'''        <div class="card">
           <h3>{f["t"]}</h3>
@@ -91,11 +90,6 @@ def build_home(code):
     els = "\n".join(
         f'''        <div class="el" style="--c:var(--{k})"><img src="/assets/img/ore/{k}.png" alt="" width="72" height="72" loading="lazy"><div class="name">{EL[k]}</div></div>'''
         for k in ["fire","water","earth","light","darkness","air","spirit"])
-    craft = "\n".join(
-        f'''        <div class="card">
-          <h3 style="color:var(--gold)">{c["t"]}</h3>
-          <p>{c["b"]}</p>
-        </div>''' for c in H["craft"])
     promise = "\n".join(f'        <li>{p}</li>' for p in H["promise_items"])
     html = f'''<!DOCTYPE html>
 <html lang="{C["_htmllang"]}">
@@ -156,16 +150,6 @@ def build_home(code):
       <h2 class="title center">{H["el_h2"]}</h2>
       <div class="elements" style="margin-top:var(--s7)">
 {els}
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="craft" style="background:var(--bg1)">
-    <div class="inner">
-      <p class="eyebrow center">{H["craft_eyebrow"]}</p>
-      <h2 class="title center">{H["craft_h2"]}</h2>
-      <div class="grid grid-3" style="margin-top:var(--s7)">
-{craft}
       </div>
     </div>
   </section>
