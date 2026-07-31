@@ -3,67 +3,209 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Elixa — Elemental Sort</title>
-  <meta name="description" content="Elixa is an alchemy-themed sorting puzzle. Pour, sort, and transmute the seven elements. No ads, no accounts.">
+  <title>Elixa — a calm alchemy sort puzzle</title>
+  <meta name="description" content="Elixa is a calm alchemy sort puzzle. Pour glowing elemental ores between glass tubes until each holds a single element. No timers, no lives, no ads mid-puzzle. Coming soon.">
   <link rel="canonical" href="https://elixagame.com/">
-  <meta property="og:title" content="Elixa — Elemental Sort">
-  <meta property="og:description" content="An alchemy-themed sorting puzzle. Pour, sort, transmute the seven elements.">
+  <meta property="og:title" content="Elixa — a calm alchemy sort puzzle">
+  <meta property="og:description" content="Pour, sort, and transmute the seven elements. No timers, no lives, no ads mid-puzzle. Pay once, play all you want. Coming soon.">
   <meta property="og:url" content="https://elixagame.com/">
   <meta property="og:image" content="https://elixagame.com/assets/img/hero.jpg">
   <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b0914">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" href="/assets/img/flask.png">
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-  <div class="wrap">
-    <main>
-      <div class="hero-banner">
-        <img src="/assets/img/hero.jpg" alt="Elixa — a glowing philosopher's-stone flask in an alchemist's lab" width="1600" height="900">
-        <div class="overlay">
-          <h1 class="title">ELIXA</h1>
-          <p class="sub">Elemental Sort</p>
+  <!-- sticky header -->
+  <header class="site-header">
+    <div class="inner">
+      <a class="wordmark" href="/"><img src="/assets/img/flask.png" alt="">ELIXA</a>
+      <nav class="site-nav">
+        <a href="#features">Features</a>
+        <a href="#elements">Elements</a>
+        <a href="#craft">The Craft</a>
+        <a class="btn-gold" href="#coming-soon">Coming soon</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- hero -->
+  <section class="hero">
+    <div class="hero-bg"><img src="/assets/img/hero.jpg" alt="A glowing philosopher's-stone flask in an alchemist's lab" fetchpriority="high"></div>
+    <div class="hero-content">
+      <p class="brandmark">ELIXA</p>
+      <p class="kicker">Elemental Sort</p>
+      <p class="tagline">A calm alchemy sort puzzle. Pour glowing elemental ores between
+        glass tubes until each one holds a single, pure element.</p>
+      <div class="cta-row">
+        <div class="store-row">
+          <span class="store-btn"><span class="ico">&#63743;</span><span><span class="l1">Coming soon</span><br><span class="l2">App&nbsp;Store</span></span></span>
+          <span class="store-btn"><span class="ico">&#9654;</span><span><span class="l1">Coming soon</span><br><span class="l2">Google&nbsp;Play</span></span></span>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="dots" aria-hidden="true">
-        <span style="background:#E6194B;color:#E6194B"></span>
-        <span style="background:#1E50FF;color:#1E50FF"></span>
-        <span style="background:#A0703C;color:#A0703C"></span>
-        <span style="background:#FFE119;color:#FFE119"></span>
-        <span style="background:#6A1B9A;color:#6A1B9A"></span>
-        <span style="background:#42D4F4;color:#42D4F4"></span>
-        <span style="background:#FF4FC3;color:#FF4FC3"></span>
+  <!-- what is elixa / pitch -->
+  <section class="section" id="about">
+    <div class="inner center">
+      <p class="eyebrow">What is Elixa</p>
+      <h2 class="title">Sort the elements. Find some quiet.</h2>
+      <p class="lead prose" style="margin:0 auto">Tap a tube, tap another, and the top ores
+        pour across — stacking colour on colour until every tube holds one clean element.
+        No timers. No lives. No energy that runs out. Just you, the ores, and as many
+        unhurried minutes as you'd like.</p>
+    </div>
+  </section>
+
+  <!-- features -->
+  <section class="section" id="features" style="background:var(--bg1)">
+    <div class="inner">
+      <p class="eyebrow center">Made to be enjoyed</p>
+      <h2 class="title center">Built for calm, not for clicks</h2>
+      <div class="grid grid-3" style="margin-top:var(--s7)">
+        <div class="card">
+          <div class="ico">&#9203;&#65038;</div>
+          <h3>Play at your pace</h3>
+          <p>No timers, no lives, no energy meter. Pick it up for one puzzle or a hundred —
+            the lab is always open.</p>
+        </div>
+        <div class="card">
+          <div class="ico">&#10024;</div>
+          <h3>Satisfying to the touch</h3>
+          <p>Every pour settles into place with a soft, deliberate click. The whole point is
+            that it <em>feels</em> good.</p>
+        </div>
+        <div class="card">
+          <div class="ico">&#9989;&#65038;</div>
+          <h3>Never an impossible board</h3>
+          <p>Every level is solver-verified before it ships. If a puzzle is in the game, it
+            can be solved — no dead ends, no cheap walls.</p>
+        </div>
+        <div class="card">
+          <div class="ico">&#127912;</div>
+          <h3>Hand-tuned levels</h3>
+          <p>Hundreds of levels across four alchemy-themed chapters, each shaped by hand so
+            the difficulty rises kindly.</p>
+        </div>
+        <div class="card">
+          <div class="ico">&#128065;&#65038;</div>
+          <h3>Readable for everyone</h3>
+          <p>Each element has its own shape and symbol, not just a colour — so the board
+            stays clear if you see colour differently.</p>
+        </div>
+        <div class="card">
+          <div class="ico">&#128246;</div>
+          <h3>Yours, offline</h3>
+          <p>Play anywhere with no connection. Your progress lives on your device — nothing
+            to log into, no account required.</p>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <nav class="top">
-        <a href="/" aria-current="page">Home</a>
-        <a href="/legal/">Legal</a>
+  <!-- 7 elements -->
+  <section class="section" id="elements">
+    <div class="inner">
+      <p class="eyebrow center">The seven elements</p>
+      <h2 class="title center">Seven ores, each with its own glow</h2>
+      <div class="elements" style="margin-top:var(--s7)">
+        <div class="el" style="--c:var(--fire)"><img src="/assets/img/ore/fire.png" alt="Fire ore"><div class="name">Fire</div></div>
+        <div class="el" style="--c:var(--water)"><img src="/assets/img/ore/water.png" alt="Water ore"><div class="name">Water</div></div>
+        <div class="el" style="--c:var(--earth)"><img src="/assets/img/ore/earth.png" alt="Earth ore"><div class="name">Earth</div></div>
+        <div class="el" style="--c:var(--light)"><img src="/assets/img/ore/light.png" alt="Light ore"><div class="name">Light</div></div>
+        <div class="el" style="--c:var(--darkness)"><img src="/assets/img/ore/darkness.png" alt="Darkness ore"><div class="name">Darkness</div></div>
+        <div class="el" style="--c:var(--air)"><img src="/assets/img/ore/air.png" alt="Air ore"><div class="name">Air</div></div>
+        <div class="el" style="--c:var(--spirit)"><img src="/assets/img/ore/spirit.png" alt="Spirit ore"><div class="name">Spirit</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- the craft / twist -->
+  <section class="section" id="craft" style="background:var(--bg1)">
+    <div class="inner">
+      <p class="eyebrow center">The craft</p>
+      <h2 class="title center">A little alchemy in every board</h2>
+      <div class="grid grid-3" style="margin-top:var(--s7)">
+        <div class="card">
+          <h3 style="color:var(--gold)">Prima materia</h3>
+          <p>A rare colourless ore pours freely into any tube — then <strong>transmutes</strong>,
+            crystallising into a true element the moment it completes a set. A small moment of
+            alchemy when you need it.</p>
+        </div>
+        <div class="card">
+          <h3 style="color:var(--gold)">Flawless runs</h3>
+          <p>Clear a level with the essential moves alone — no hints, no undo — and earn a
+            <strong>Flawless</strong>: a perfect transmutation, marked with its own crimson stars.</p>
+        </div>
+        <div class="card">
+          <h3 style="color:var(--gold)">Four chapters</h3>
+          <p>Work from <strong>Foundations</strong> through <strong>Crucible</strong> and
+            <strong>Confluence</strong> to <strong>The Great Work</strong> — the lab deepens as
+            your hands learn it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- gameplay gallery -->
+  <section class="section" id="gallery">
+    <div class="inner center">
+      <p class="eyebrow">A look inside the lab</p>
+      <h2 class="title">See it in motion</h2>
+      <div class="gallery" style="margin-top:var(--s7)">
+        <figure class="phone" style="margin:0"><img src="/assets/img/shots/level24.jpg" alt="Elixa gameplay — pouring ores between glass tubes"><figcaption class="cap">Pour to sort — one element per tube</figcaption></figure>
+        <figure class="phone" style="margin:0"><img src="/assets/img/shots/level8.jpg" alt="Elixa gameplay — a puzzle mid-solve"><figcaption class="cap">Calm, unhurried, no timers</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- the promise / model -->
+  <section class="section band" id="promise">
+    <div class="inner center">
+      <p class="eyebrow">Our promise</p>
+      <h2 class="title">Pay once. Play all you want.</h2>
+      <p class="lead prose" style="margin:0 auto">One fair unlock opens the whole collection and
+        removes the ads — buy it once and it's yours. No interruptions, no waiting, no catch.</p>
+      <ul class="promise-list prose" style="margin-left:auto;margin-right:auto">
+        <li>No ads in the middle of a puzzle</li>
+        <li>No subscription</li>
+        <li>No energy timers or lives</li>
+        <li>No dark patterns</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- coming soon CTA -->
+  <section class="section" id="coming-soon">
+    <div class="inner center">
+      <p class="eyebrow">Upcoming</p>
+      <h2 class="title">In the lab now — coming soon</h2>
+      <p class="lead prose" style="margin:0 auto">Elixa is in closed testing, being tuned toward
+        a release on the App Store and Google Play. Want an early look or to help test?
+        <a href="mailto:mateusl.amaral@gmail.com?subject=Elixa%20beta">Get in touch</a>.</p>
+      <div class="store-row" style="margin-top:var(--s7)">
+        <span class="store-btn"><span class="ico">&#63743;</span><span><span class="l1">Coming soon</span><br><span class="l2">App&nbsp;Store</span></span></span>
+        <span class="store-btn"><span class="ico">&#9654;</span><span><span class="l1">Coming soon</span><br><span class="l2">Google&nbsp;Play</span></span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="inner">
+      <a class="wordmark" href="/" style="font-size:17px"><img src="/assets/img/flask.png" alt="" style="width:28px;height:28px">ELIXA</a>
+      <nav class="fnav">
         <a href="/privacy/">Privacy</a>
         <a href="/support/">Support</a>
+        <a href="/terms/">Terms</a>
+        <a href="mailto:mateusl.amaral@gmail.com">Contact</a>
       </nav>
-
-      <div class="card">
-        <p class="lead" style="text-align:center;margin-top:6px">Pour, sort, and transmute
-          the seven elements.</p>
-        <p>Elixa is an alchemy-themed sorting puzzle by Mateus Amaral. It collects
-          <strong>no personal information</strong>, shows <strong>no ads</strong>, and
-          requires <strong>no account</strong> — only anonymous, aggregate gameplay
-          analytics used to improve the game.</p>
-        <ul class="links">
-          <li><a href="/privacy/">Privacy Policy</a></li>
-          <li><a href="/support/">Support</a></li>
-          <li><a href="/legal/">Legal</a></li>
-        </ul>
-      </div>
-    </main>
-
-    <footer class="site">
-      &copy; 2026 Mateus Amaral · Elixa ·
-      <a href="/privacy/">Privacy</a> · <a href="/support/">Support</a>
-    </footer>
-  </div>
+      <p class="copy">&copy; 2026 Mateus Amaral · Elixa</p>
+    </div>
+  </footer>
 </body>
 </html>
