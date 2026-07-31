@@ -98,3 +98,27 @@ ul { padding-left: 20px; } li { margin: 6px 0; }
 footer.site { text-align: center; color: var(--mut); font-size: 12.5px; margin-top: 44px; }
 footer.site a { color: var(--mut); }
 footer.site a:hover { color: var(--gold); }
+
+/* Landing hero banner */
+.hero-banner {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(242,208,107,.28);
+  box-shadow: 0 18px 60px rgba(0,0,0,.55), 0 0 60px rgba(122,92,255,.14);
+  margin-bottom: 8px;
+  aspect-ratio: 16 / 9;
+  background: #0a0910 center/cover no-repeat;
+}
+.hero-banner img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.hero-banner .overlay {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+  text-align: center; padding: 0 22px 30px;
+  background: linear-gradient(180deg, rgba(10,9,16,0) 40%, rgba(10,9,16,.72) 100%);
+}
+.hero-banner h1.title { font-size: 46px; margin: 0 0 2px; text-shadow: 0 3px 18px rgba(0,0,0,.7); }
+.hero-banner .sub { text-shadow: 0 2px 12px rgba(0,0,0,.8); }
+@media (max-width: 560px) {
+  .hero-banner h1.title { font-size: 32px; }
+}
