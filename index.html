@@ -19,10 +19,11 @@
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <!-- sticky header -->
   <header class="site-header">
     <div class="inner">
-      <a class="wordmark" href="/"><img src="/assets/img/flask.png" alt="">ELIXA</a>
+      <a class="wordmark" href="/"><img src="/assets/img/flask.png" alt="" width="34" height="34">ELIXA</a>
       <nav class="site-nav">
         <a href="#features">Features</a>
         <a href="#elements">Elements</a>
@@ -32,18 +33,19 @@
     </div>
   </header>
 
+  <main id="main">
   <!-- hero -->
   <section class="hero">
     <div class="hero-bg"><img src="/assets/img/hero.jpg" alt="A glowing philosopher's-stone flask in an alchemist's lab" fetchpriority="high"></div>
     <div class="hero-content">
-      <p class="brandmark">ELIXA</p>
+      <h1 class="brandmark">ELIXA</h1>
       <p class="kicker">Elemental Sort</p>
       <p class="tagline">A calm alchemy sort puzzle. Pour glowing elemental ores between
         glass tubes until each one holds a single, pure element.</p>
       <div class="cta-row">
         <div class="store-row">
-          <span class="store-btn soon" aria-disabled="true"><span class="ico">&#63743;</span><span><span class="l1">Coming&nbsp;soon</span><br><span class="l2">App&nbsp;Store</span></span></span>
-          <span class="store-btn soon" aria-disabled="true"><span class="ico">&#9654;</span><span><span class="l1">Coming&nbsp;soon</span><br><span class="l2">Google&nbsp;Play</span></span></span>
+          <span class="store-btn soon" role="img" aria-label="App Store — coming soon"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M17.05 12.54c-.02-2.3 1.88-3.4 1.96-3.45-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-2.99-.79-1.54.02-2.96.9-3.75 2.28-1.6 2.78-.41 6.89 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.43-3.65zM14.8 5.5c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.78-.97 2.83 1.03.08 2.07-.52 2.71-1.29z"/></svg><span><span class="l1">Coming&nbsp;soon</span><br><span class="l2">App&nbsp;Store</span></span></span>
+          <span class="store-btn soon" role="img" aria-label="Google Play — coming soon"><svg class="ico" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M4 3.5v17l13-8.5z"/></svg><span><span class="l1">Coming&nbsp;soon</span><br><span class="l2">Google&nbsp;Play</span></span></span>
         </div>
       </div>
     </div>
@@ -68,37 +70,37 @@
       <h2 class="title center">Built for calm, not for clicks</h2>
       <div class="grid grid-3" style="margin-top:var(--s7)">
         <div class="card">
-          <div class="ico">&#9203;&#65038;</div>
+          <div class="ico" aria-hidden="true">&#9203;&#65038;</div>
           <h3>Play at your pace</h3>
           <p>No timers, no lives, no energy meter. Pick it up for one puzzle or a hundred —
             the lab is always open.</p>
         </div>
         <div class="card">
-          <div class="ico">&#10024;</div>
+          <div class="ico" aria-hidden="true">&#10024;</div>
           <h3>Satisfying to the touch</h3>
           <p>Every pour settles into place with a soft, deliberate click. The whole point is
             that it <em>feels</em> good.</p>
         </div>
         <div class="card">
-          <div class="ico">&#9989;&#65038;</div>
+          <div class="ico" aria-hidden="true">&#9989;&#65038;</div>
           <h3>Never an impossible board</h3>
           <p>Every level is solver-verified before it ships. If a puzzle is in the game, it
             can be solved — no dead ends, no cheap walls.</p>
         </div>
         <div class="card">
-          <div class="ico">&#127912;</div>
+          <div class="ico" aria-hidden="true">&#127912;</div>
           <h3>Hundreds of levels</h3>
           <p>Hundreds of levels across four alchemy-themed chapters, tuned so the difficulty
             rises kindly — from your first pour to The Great Work.</p>
         </div>
         <div class="card">
-          <div class="ico">&#128065;&#65038;</div>
+          <div class="ico" aria-hidden="true">&#128065;&#65038;</div>
           <h3>Readable for everyone</h3>
           <p>Each element has its own shape and symbol, not just a colour — so the board
             stays clear if you see colour differently.</p>
         </div>
         <div class="card">
-          <div class="ico">&#128246;</div>
+          <div class="ico" aria-hidden="true">&#128246;</div>
           <h3>Yours, offline</h3>
           <p>Play anywhere with no connection. Your progress lives on your device — nothing
             to log into, no account required.</p>
@@ -113,13 +115,13 @@
       <p class="eyebrow center">The seven elements</p>
       <h2 class="title center">Seven ores, each with its own glow</h2>
       <div class="elements" style="margin-top:var(--s7)">
-        <div class="el" style="--c:var(--fire)"><img src="/assets/img/ore/fire.png" alt="Fire ore"><div class="name">Fire</div></div>
-        <div class="el" style="--c:var(--water)"><img src="/assets/img/ore/water.png" alt="Water ore"><div class="name">Water</div></div>
-        <div class="el" style="--c:var(--earth)"><img src="/assets/img/ore/earth.png" alt="Earth ore"><div class="name">Earth</div></div>
-        <div class="el" style="--c:var(--light)"><img src="/assets/img/ore/light.png" alt="Light ore"><div class="name">Light</div></div>
-        <div class="el" style="--c:var(--darkness)"><img src="/assets/img/ore/darkness.png" alt="Darkness ore"><div class="name">Darkness</div></div>
-        <div class="el" style="--c:var(--air)"><img src="/assets/img/ore/air.png" alt="Air ore"><div class="name">Air</div></div>
-        <div class="el" style="--c:var(--spirit)"><img src="/assets/img/ore/spirit.png" alt="Spirit ore"><div class="name">Spirit</div></div>
+        <div class="el" style="--c:var(--fire)"><img src="/assets/img/ore/fire.png" alt="" width="72" height="72" loading="lazy"><div class="name">Fire</div></div>
+        <div class="el" style="--c:var(--water)"><img src="/assets/img/ore/water.png" alt="" width="72" height="72" loading="lazy"><div class="name">Water</div></div>
+        <div class="el" style="--c:var(--earth)"><img src="/assets/img/ore/earth.png" alt="" width="72" height="72" loading="lazy"><div class="name">Earth</div></div>
+        <div class="el" style="--c:var(--light)"><img src="/assets/img/ore/light.png" alt="" width="72" height="72" loading="lazy"><div class="name">Light</div></div>
+        <div class="el" style="--c:var(--darkness)"><img src="/assets/img/ore/darkness.png" alt="" width="72" height="72" loading="lazy"><div class="name">Darkness</div></div>
+        <div class="el" style="--c:var(--air)"><img src="/assets/img/ore/air.png" alt="" width="72" height="72" loading="lazy"><div class="name">Air</div></div>
+        <div class="el" style="--c:var(--spirit)"><img src="/assets/img/ore/spirit.png" alt="" width="72" height="72" loading="lazy"><div class="name">Spirit</div></div>
       </div>
     </div>
   </section>
@@ -157,8 +159,8 @@
       <p class="eyebrow">A look inside the lab</p>
       <h2 class="title">See it in play</h2>
       <div class="gallery" style="margin-top:var(--s7)">
-        <figure class="phone" style="margin:0"><img src="/assets/img/shots/level24.jpg" alt="Elixa gameplay — pouring ores between glass tubes"><figcaption class="cap">Pour to sort — one element per tube</figcaption></figure>
-        <figure class="phone" style="margin:0"><img src="/assets/img/shots/level8.jpg" alt="Elixa gameplay — a puzzle mid-solve"><figcaption class="cap">Calm, unhurried, no timers</figcaption></figure>
+        <figure class="phone" style="margin:0"><img src="/assets/img/shots/level24.jpg" alt="Elixa gameplay — pouring ores between glass tubes" width="646" height="1400" loading="lazy"><figcaption class="cap">Pour to sort — one element per tube</figcaption></figure>
+        <figure class="phone" style="margin:0"><img src="/assets/img/shots/level8.jpg" alt="Elixa gameplay — a puzzle mid-solve" width="646" height="1400" loading="lazy"><figcaption class="cap">Calm, unhurried, no timers</figcaption></figure>
       </div>
     </div>
   </section>
@@ -188,16 +190,18 @@
         a release on the App Store and Google Play. Want an early look or to help test?
         <a href="mailto:mateusl.amaral@gmail.com?subject=Elixa%20beta">Get in touch</a>.</p>
       <div class="store-row" style="margin-top:var(--s7)">
-        <span class="store-btn soon" aria-disabled="true"><span class="ico">&#63743;</span><span><span class="l1">Coming&nbsp;soon</span><br><span class="l2">App&nbsp;Store</span></span></span>
-        <span class="store-btn soon" aria-disabled="true"><span class="ico">&#9654;</span><span><span class="l1">Coming&nbsp;soon</span><br><span class="l2">Google&nbsp;Play</span></span></span>
+        <span class="store-btn soon" role="img" aria-label="App Store — coming soon"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M17.05 12.54c-.02-2.3 1.88-3.4 1.96-3.45-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-2.99-.79-1.54.02-2.96.9-3.75 2.28-1.6 2.78-.41 6.89 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.43-3.65zM14.8 5.5c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.78-.97 2.83 1.03.08 2.07-.52 2.71-1.29z"/></svg><span><span class="l1">Coming&nbsp;soon</span><br><span class="l2">App&nbsp;Store</span></span></span>
+        <span class="store-btn soon" role="img" aria-label="Google Play — coming soon"><svg class="ico" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M4 3.5v17l13-8.5z"/></svg><span><span class="l1">Coming&nbsp;soon</span><br><span class="l2">Google&nbsp;Play</span></span></span>
       </div>
     </div>
   </section>
 
+  </main>
+
   <!-- footer -->
   <footer class="site-footer">
     <div class="inner">
-      <a class="wordmark" href="/" style="font-size:17px"><img src="/assets/img/flask.png" alt="" style="width:28px;height:28px">ELIXA</a>
+      <a class="wordmark" href="/" style="font-size:17px"><img src="/assets/img/flask.png" alt="" width="28" height="28">ELIXA</a>
       <nav class="fnav">
         <a href="/privacy/">Privacy</a>
         <a href="/support/">Support</a>
