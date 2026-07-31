@@ -33,7 +33,7 @@ body {
   background: var(--bg0);
   -webkit-font-smoothing: antialiased;
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 a { color: var(--link); text-decoration: none; }
 a:hover { color: var(--gold); }
 strong { color: #fff; }
