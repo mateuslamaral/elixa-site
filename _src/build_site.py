@@ -79,8 +79,8 @@ PLAY = '<svg class="ico" viewBox="0 0 24 24" width="20" height="20" fill="curren
 def store_pills(code):
     C = CONTENT[code]; cs = C["common"]["coming_soon"]
     return f'''<div class="store-row">
-          <span class="store-btn soon" role="img" aria-label="App Store — {cs}">{APPLE}<span><span class="l1">{cs}</span><br><span class="l2">App&nbsp;Store</span></span></span>
-          <span class="store-btn soon" role="img" aria-label="Google Play — {cs}">{PLAY}<span><span class="l1">{cs}</span><br><span class="l2">Google&nbsp;Play</span></span></span>
+          <span class="store-btn soon" role="img" aria-label="App Store: {cs}">{APPLE}<span><span class="l1">{cs}</span><br><span class="l2">App&nbsp;Store</span></span></span>
+          <span class="store-btn soon" role="img" aria-label="Google Play: {cs}">{PLAY}<span><span class="l1">{cs}</span><br><span class="l2">Google&nbsp;Play</span></span></span>
         </div>'''
 
 def build_home(code):
