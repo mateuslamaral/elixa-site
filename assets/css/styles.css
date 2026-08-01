@@ -50,6 +50,9 @@ a:focus-visible, .btn-gold:focus-visible, button:focus-visible, [tabindex]:focus
 
 /* ---- layout ---- */
 .section { position: relative; padding: clamp(72px,10vw,128px) 0; }
+/* vary vertical rhythm — sections shouldn't all breathe identically */
+#features { padding-block: clamp(88px,11vw,140px); }
+#elements { padding-block: clamp(56px,8vw,96px); }
 .inner { max-width: 1200px; margin: 0 auto; padding-inline: clamp(24px,5vw,64px); }
 .prose { max-width: 680px; }
 .center { text-align: center; }
@@ -220,6 +223,7 @@ h3 { font-family: Cinzel, serif; font-weight: 600; color: var(--pale);
 /* language switcher */
 .lang-switch { display:flex; gap:2px; align-items:center; font-size:13px; letter-spacing:.06em;
   border:1px solid var(--line); border-radius:10px; overflow:hidden; }
-.lang-switch a { padding:6px 10px; color:var(--mut); min-height:auto !important; }
+.lang-switch a { padding:9px 11px; color:var(--mut); min-height:24px !important;
+  display:inline-flex; align-items:center; }
 .lang-switch a[aria-current="page"] { background:rgba(242,208,107,.14); color:var(--gold); }
 .lang-switch a:hover { color:var(--gold); }

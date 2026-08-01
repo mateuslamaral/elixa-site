@@ -140,8 +140,7 @@ def build_home(code):
 
   <section class="section" id="features" style="background:var(--bg1)">
     <div class="inner">
-      <p class="eyebrow center">{H["feat_eyebrow"]}</p>
-      <h2 class="title center">{H["feat_h2"]}</h2>
+      <h2 class="title">{H["feat_h2"]}</h2>
       <div class="grid grid-3" style="margin-top:var(--s7)">
 {feats}
       </div>
@@ -150,7 +149,6 @@ def build_home(code):
 
   <section class="section" id="elements">
     <div class="inner">
-      <p class="eyebrow center">{H["el_eyebrow"]}</p>
       <h2 class="title center">{H["el_h2"]}</h2>
       <div class="elements" style="margin-top:var(--s7)">
 {els}
@@ -160,7 +158,6 @@ def build_home(code):
 
   <section class="section" id="gallery">
     <div class="inner center">
-      <p class="eyebrow">{H["gal_eyebrow"]}</p>
       <h2 class="title">{H["gal_h2"]}</h2>
       <div class="gallery" style="margin-top:var(--s7)">
         <figure class="phone" style="margin:0"><img src="/assets/img/shots/menu.jpg" alt="{H["gal_cap3"]}" width="646" height="1400" loading="lazy"><figcaption class="cap">{H["gal_cap3"]}</figcaption></figure>
@@ -183,7 +180,6 @@ def build_home(code):
 
   <section class="section" id="coming-soon">
     <div class="inner center">
-      <p class="eyebrow">{H["coming_eyebrow"]}</p>
       <h2 class="title">{H["coming_h2"]}</h2>
       <p class="lead prose" style="margin:0 auto">{H["coming_lead_pre"]}<a href="mailto:mateusl.amaral@gmail.com?subject=Elixa%20beta">{H["coming_lead_link"]}</a>{H["coming_lead_post"]}</p>
       <div style="margin-top:var(--s7)">
