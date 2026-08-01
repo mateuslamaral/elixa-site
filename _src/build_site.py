@@ -4,14 +4,18 @@ English at root (/), Portuguese at /pt/, Spanish at /es/. Adds hreflang alternat
 + a language switcher + correct lang attribute per page. Static, no build step at serve time."""
 import json, os
 
-ROOT = "/tmp/elixa-legal"
+# Repo-relative: this script lives in <repo>/_src/, the site root is its parent, and the
+# content JSONs sit beside it. (Overridable via ELIXA_SITE_ROOT / ELIXA_SRC for CI.)
+_SRC_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.environ.get("ELIXA_SITE_ROOT", os.path.dirname(_SRC_DIR))
+_CONTENT_DIR = os.environ.get("ELIXA_SRC", _SRC_DIR)
 SITE = "https://elixagame.com"
 LOCALES = [("en", ""), ("pt", "/pt"), ("es", "/es")]  # (code, url-prefix)
 PAGE_PATHS = {  # page-type -> path suffix (locale-prefixed at build)
     "home": "/", "legal": "/legal/", "privacy": "/privacy/",
     "support": "/support/", "terms": "/terms/",
 }
-CONTENT = {code: json.load(open(f"/tmp/site-i18n/content.{code}.json")) for code, _ in LOCALES}
+CONTENT = {code: json.load(open(os.path.join(_CONTENT_DIR, f"content.{code}.json"))) for code, _ in LOCALES}
 
 FONTS = ('  <link rel="preconnect" href="https://fonts.googleapis.com">\n'
          '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
@@ -159,6 +163,7 @@ def build_home(code):
       <p class="eyebrow">{H["gal_eyebrow"]}</p>
       <h2 class="title">{H["gal_h2"]}</h2>
       <div class="gallery" style="margin-top:var(--s7)">
+        <figure class="phone" style="margin:0"><img src="/assets/img/shots/menu.jpg" alt="{H["gal_cap3"]}" width="646" height="1400" loading="lazy"><figcaption class="cap">{H["gal_cap3"]}</figcaption></figure>
         <figure class="phone" style="margin:0"><img src="/assets/img/shots/level24.jpg" alt="{H["gal_cap1"]}" width="646" height="1400" loading="lazy"><figcaption class="cap">{H["gal_cap1"]}</figcaption></figure>
         <figure class="phone" style="margin:0"><img src="/assets/img/shots/level8.jpg" alt="{H["gal_cap2"]}" width="646" height="1400" loading="lazy"><figcaption class="cap">{H["gal_cap2"]}</figcaption></figure>
       </div>
