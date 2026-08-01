@@ -149,7 +149,6 @@ h3 { font-family: Cinzel, serif; font-weight: 600; color: var(--pale);
 .card {
   background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
   border:1px solid var(--line); border-radius:16px; padding:var(--s6);
-  backdrop-filter: blur(12px);
   box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 20px 40px -20px rgba(0,0,0,.6);
   transition: transform .2s ease-out, border-color .2s ease-out, box-shadow .2s ease-out;
 }
