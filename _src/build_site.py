@@ -2,7 +2,7 @@
 """Generate the Elixa site in all locales from content.{en,pt,es}.json.
 English at root (/), Portuguese at /pt/, Spanish at /es/. Adds hreflang alternates
 + a language switcher + correct lang attribute per page. Static, no build step at serve time."""
-import json, os
+import json, os, math
 
 # Repo-relative: this script lives in <repo>/_src/, the site root is its parent, and the
 # content JSONs sit beside it. (Overridable via ELIXA_SITE_ROOT / ELIXA_SRC for CI.)
@@ -91,9 +91,21 @@ def build_home(code):
           <h3>{f["t"]}</h3>
           <p>{f["b"]}</p>
         </div>''' for f in H["feat"])
-    els = "\n".join(
-        f'''        <div class="el" style="--c:var(--{k})"><img src="/assets/img/ore/{k}.png" alt="" width="72" height="72" loading="lazy"><div class="name">{EL[k]}</div></div>'''
-        for k in ["fire","water","earth","light","darkness","air","spirit"])
+    # 7 elements as an alchemical transmutation circle: ores on a ring, joined by a {7/3} heptagram
+    ELK = ["fire","water","earth","light","darkness","air","spirit"]
+    pts = []
+    for i, k in enumerate(ELK):
+        a = math.radians(-90 + i * 360 / 7)
+        pts.append((k, 50 + 38 * math.cos(a), 50 + 38 * math.sin(a)))
+    hep = " ".join(("M" if j == 0 else "L") + f"{pts[o][1]:.2f} {pts[o][2]:.2f}"
+                   for j, o in enumerate([0, 3, 6, 2, 5, 1, 4])) + " Z"
+    tc_svg = (f'<svg class="tc-lines" viewBox="0 0 100 100" fill="none" aria-hidden="true">'
+              f'<circle cx="50" cy="50" r="38"/><path d="{hep}"/></svg>')
+    tc_nodes = "\n".join(
+        f'        <div class="el" style="--c:var(--{k});left:{x:.2f}%;top:{y:.2f}%">'
+        f'<img src="/assets/img/ore/{k}.png" alt="" width="64" height="64" loading="lazy">'
+        f'<div class="name">{EL[k]}</div></div>' for k, x, y in pts)
+    els = (f'{tc_svg}\n        <div class="tc-core" aria-hidden="true"><span>VII</span></div>\n{tc_nodes}')
     promise = "\n".join(f'        <li>{p}</li>' for p in H["promise_items"])
     html = f'''<!DOCTYPE html>
 <html lang="{C["_htmllang"]}">
@@ -131,10 +143,10 @@ def build_home(code):
   </section>
 
   <section class="section" id="about">
-    <div class="inner center">
+    <div class="inner">
       <p class="eyebrow">{H["about_eyebrow"]}</p>
       <h2 class="title">{H["about_h2"]}</h2>
-      <p class="lead prose" style="margin:0 auto">{H["about_lead"]}</p>
+      <p class="lead prose">{H["about_lead"]}</p>
     </div>
   </section>
 
@@ -150,16 +162,16 @@ def build_home(code):
   <section class="section" id="elements">
     <div class="inner">
       <h2 class="title center">{H["el_h2"]}</h2>
-      <div class="elements" style="margin-top:var(--s7)">
+      <div class="el-circle" style="margin-top:var(--s7)">
 {els}
       </div>
     </div>
   </section>
 
   <section class="section" id="gallery">
-    <div class="inner center">
+    <div class="inner">
       <h2 class="title">{H["gal_h2"]}</h2>
-      <div class="gallery" style="margin-top:var(--s7)">
+      <div class="gallery" style="margin-top:var(--s7);justify-content:flex-start">
         <figure class="phone" style="margin:0"><img src="/assets/img/shots/menu.jpg" alt="{H["gal_cap3"]}" width="646" height="1400" loading="lazy"><figcaption class="cap">{H["gal_cap3"]}</figcaption></figure>
         <figure class="phone" style="margin:0"><img src="/assets/img/shots/level24.jpg" alt="{H["gal_cap1"]}" width="646" height="1400" loading="lazy"><figcaption class="cap">{H["gal_cap1"]}</figcaption></figure>
         <figure class="phone" style="margin:0"><img src="/assets/img/shots/level8.jpg" alt="{H["gal_cap2"]}" width="646" height="1400" loading="lazy"><figcaption class="cap">{H["gal_cap2"]}</figcaption></figure>

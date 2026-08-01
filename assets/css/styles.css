@@ -130,7 +130,8 @@ h3 { font-family: Cinzel, serif; font-weight: 600; color: var(--pale);
 .store-row { display:flex; gap:var(--s4); flex-wrap:wrap; justify-content:center; }
 .store-btn { display:flex; align-items:center; gap:var(--s3); text-align:left;
   padding:12px 20px; border-radius:14px; background:rgba(255,255,255,.05);
-  border:1px solid var(--line); color:var(--pale); transition:.2s ease-out; min-width:210px; }
+  border:1px solid var(--line); color:var(--pale); min-width:210px;
+  transition: border-color .2s ease-out, transform .2s ease-out, box-shadow .2s ease-out; }
 .store-btn:hover { color:var(--pale); border-color:rgba(242,208,107,.5); transform:translateY(-3px);
   box-shadow:0 16px 34px -18px rgba(0,0,0,.8); }
 .store-btn .ico { font-size:26px; line-height:1; }
@@ -155,22 +156,31 @@ h3 { font-family: Cinzel, serif; font-weight: 600; color: var(--pale);
 .card:hover { transform: translateY(-4px); border-color: rgba(242,208,107,.35); }
 .card .ico { font-size:30px; margin-bottom:var(--s3); }
 
-/* ---- elements showcase (centred flex so the 7th never orphans left) ---- */
-.elements { display:flex; flex-wrap:wrap; gap:var(--s4); justify-content:center; }
-.el { flex:0 1 148px; }
-.el {
-  --c: var(--gold);
-  text-align:center; padding:var(--s5) var(--s3); border-radius:16px;
-  background: var(--bg1); border:1px solid var(--line);
-  border-top: 2px solid color-mix(in srgb, var(--c) 55%, transparent);
-  transition: transform .2s ease-out, box-shadow .2s ease-out, border-color .2s ease-out;
+/* ---- elements as an alchemical transmutation circle (ores on a heptagram ring) ---- */
+.el-circle { position:relative; width:min(580px,86vw); aspect-ratio:1; margin-inline:auto; }
+.el-circle .tc-lines { position:absolute; inset:0; width:100%; height:100%; overflow:visible;
+  stroke: color-mix(in srgb, var(--gold) 38%, transparent); stroke-width:.35;
+  stroke-linejoin:round; vector-effect:non-scaling-stroke; }
+.el-circle .el { --c:var(--gold); position:absolute; transform:translate(-50%,-50%);
+  width:104px; text-align:center; }
+.el-circle .el img { width:66px; height:66px; object-fit:contain; margin:0 auto 6px;
+  filter: drop-shadow(0 0 15px color-mix(in srgb, var(--c) 62%, transparent));
+  transition: transform .25s ease-out, filter .25s ease-out; }
+.el-circle .el:hover img { transform:scale(1.14);
+  filter: drop-shadow(0 0 24px color-mix(in srgb, var(--c) 80%, transparent)); }
+.el-circle .el .name { font-family:Cinzel,serif; font-weight:600; color:var(--pale);
+  font-size:14px; letter-spacing:.08em; }
+.tc-core { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+  width:78px; height:78px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  border:1px solid color-mix(in srgb, var(--gold) 48%, transparent);
+  background: radial-gradient(circle, rgba(242,208,107,.16), transparent 72%);
+  font-family:Cinzel,serif; color:var(--gold); letter-spacing:.14em; font-size:16px; }
+@media (max-width:640px){
+  .el-circle { width:100%; aspect-ratio:auto; display:flex; flex-wrap:wrap;
+    gap:var(--s5) var(--s4); justify-content:center; }
+  .el-circle .tc-lines, .tc-core { display:none; }
+  .el-circle .el { position:static; transform:none; width:92px; }
 }
-.el:hover { transform: translateY(-4px);
-  box-shadow: 0 16px 40px -18px color-mix(in srgb, var(--c) 60%, transparent);
-  border-color: color-mix(in srgb, var(--c) 50%, transparent); }
-.el img { width:72px; height:72px; object-fit:contain; margin:0 auto var(--s3);
-  filter: drop-shadow(0 0 16px color-mix(in srgb, var(--c) 45%, transparent)); }
-.el .name { font-family:Cinzel,serif; font-weight:600; color:var(--pale); font-size:16px; letter-spacing:.04em; }
 
 /* ---- gameplay gallery (device frames) ---- */
 .gallery { display:flex; gap:var(--s6); flex-wrap:wrap; justify-content:center; align-items:flex-start; }
